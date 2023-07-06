@@ -1,0 +1,78 @@
+@import '../../scss/colors.scss';
+@import '../../scss/breakpoints.scss';
+
+@keyframes showPromo {
+  from {
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+    animation-timing-function: ease-out;
+  }
+
+  40% {
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -190deg);
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -170deg);
+    animation-timing-function: ease-in;
+  }
+
+  80% {
+    transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, 0deg);
+    animation-timing-function: ease-in;
+  }
+
+  to {
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    animation-timing-function: ease-in;
+  }
+}
+
+.header-promo {
+  padding-top: 120px;
+  text-align: center;
+  position: relative;
+  &__slang {
+    margin: 0 auto;
+    width: 840px;
+    animation: showPromo 3s;
+    @media screen and (max-width: map-get($breakpoints,'lg')) {
+      animation: none;
+      width: 100%;
+      font-size: 48px;
+    }
+    @media screen and (max-width: map-get($breakpoints,'md')) {
+      font-size: 36px;
+    }
+    @media screen and (max-width: map-get($breakpoints,'sm')) {
+      font-size: 24px;
+    }
+  }
+  &__slang2 {
+    margin: 0;
+    padding: 80px;
+  }
+  &__image1 {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+  }
+  &__image2 {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+  }
+  &__image3 {
+    position: absolute;
+    left: 70%;
+    top: 10%;
+  }
+  &__image4 {
+    position: absolute;
+    left: 75%;
+    top: 70%;
+  }
+}

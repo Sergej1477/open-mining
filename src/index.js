@@ -1,0 +1,20 @@
+import '@fortawesome/fontawesome-free/js/all';
+
+import './main.scss';
+import './components/typography/typography.scss';
+import './components/container.scss';
+import './components/header/header';
+import './components/header-promo/header-promo';
+import './components/button/button';
+import './components/preview/preview';
+import './components/card/card';
+import './components/infoblock/infoblock';
+import './components/calcblock/calcblock';
+import './components/promo/promo';
+import './components/faq/faq';
+import './components/feedback-form/feedback-form';
+import './components/footer/footer';
+import './components/test-animate/test-animate';
+import './components/social-icons/social-icons';
+import './components/vertical-menu/vertical-menu';
+import './components/drawer/drawer';

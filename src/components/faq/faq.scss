@@ -1,0 +1,58 @@
+@import '../../scss/colors.scss';
+@import '../../scss/breakpoints.scss';
+
+.faq {
+  background-image: url('../../assets/images/faq/Vector4.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  min-height: 2208px;
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: map-get($breakpoints,'xl')) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__right {
+      @media screen and (max-width: map-get($breakpoints,'xl')) {
+        margin-left: 0;
+      }
+    }
+  }
+  &__accordion {
+    width: 776px;
+    height: 152px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    border-radius: 10px;
+    padding: 48px 60px 48px 40px;
+    background-color: map-get($primaryColors, 'primaryGreen');
+    color: map-get($mainColors, 'mainWhite');
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+    &:hover {
+      background-color: map-get($otherColors, 'otherYellow');
+    }
+    @media screen and (max-width: map-get($breakpoints,'md')) {
+      width: 100%;
+      justify-content: center;
+      font-size: 20px;
+    }
+  }
+  &__panel {
+    width: 664px;
+    height: auto;
+    padding: 0 24px;
+    background-color: transparent;
+    display: none;
+  }
+}
+.active {
+  background-color: map-get($otherColors, 'otherYellow');
+  color: map-get($mainColors, 'mainBlack');
+  .faq__img {
+    transform: rotate(90deg);
+  }
+}

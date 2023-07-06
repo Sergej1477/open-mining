@@ -1,0 +1,36 @@
+@import '../../scss/colors.scss';
+@import '../../scss/breakpoints.scss';
+
+.card-block {
+  display: flex;
+  justify-content: space-around;
+  gap: 80px;
+  @media screen and (max-width: map-get($breakpoints,'xxl')) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.card {
+  width: 416px;
+  height: 552px;
+  border: 1px solid map-get($borderColors, 'borderGray');
+  background-color: map-get($mainColors, 'mainSnow');
+  border-radius: 24px;
+  &__box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+  }
+  &:hover {
+    transform: translateY(-50px);
+    box-shadow: 10px 10px 10px map-get($borderColors, 'borderGray');
+  }
+  // &--active {
+  //   transform: translateY(-50px);
+  //   box-shadow: 10px 10px 10px map-get($borderColors, 'borderGray');
+  // }
+}

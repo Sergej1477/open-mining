@@ -1,0 +1,30 @@
+@import '../../scss/colors.scss';
+@import '../typography/texts.scss';
+
+.footer {
+  background: url('../../assets/images/footer/spot6.png') no-repeat left bottom,
+    url('../../assets/images/footer/spot7.png') no-repeat right bottom;
+  height: 300px;
+  &__top-panel {
+    max-width: 1768px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__user-links {
+    width: 736px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+  &__panel {
+    display: flex;
+    justify-content: center;
+    grid-column-gap: 85px;
+    transform: translateX(45px);
+  }
+  &__bottom {
+    @extend .text-main;
+    color: map-get($mainColors, 'mainGray');
+  }
+}

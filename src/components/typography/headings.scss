@@ -1,0 +1,28 @@
+@import '../../scss/colors.scss';
+
+.h1 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 130%;
+}
+
+.h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  &--yellow {
+    color: map-get($primaryColors,'primaryOrange');
+  }
+}
+
+.h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 130%;
+}
+
+.h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+}

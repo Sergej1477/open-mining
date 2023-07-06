@@ -1,0 +1,41 @@
+@import './scss/fonts.scss';
+@import './scss/colors.scss';
+@import './scss/typography.scss';
+@import './scss/breakpoints.scss';
+@import './scss/utils.scss';
+
+html {
+  font-size: $mainFontSize;
+  line-height: $mainLineHeight;
+}
+
+body {
+  background-color: map-get($mainColors, 'mainWhite');
+  color: map-get($mainColors, 'mainBlack');
+  font-family: $mainFontFamily;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+// input[type='range']::-webkit-slider-thumb {
+//   background: #ff4500;
+//   cursor: ew-resize;
+// }
+
+// input[type='range']::-webkit-slider-runnable-track {
+//   -webkit-appearance: none;
+//   box-shadow: none;
+//   border: none;
+//   background: #ff4500;
+// }
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin: 0;
+}

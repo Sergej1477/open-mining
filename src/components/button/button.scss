@@ -1,0 +1,31 @@
+@import '../../scss/colors.scss';
+@import '../typography/button-text.scss';
+
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background: map-get($primaryColors, 'primaryGreen');
+  color: map-get($mainColors, 'mainSnow');
+  &--white {
+    background: map-get($mainColors, 'mainSnow');
+    color: map-get($mainColors, 'mainBlack');
+    border: 1px solid map-get($borderColors, 'borderCard');
+  }
+  &--text {
+    @extend .button-text;
+    padding: 16px 64px;
+  }
+  &--small {
+    @extend .button-small;
+    padding: 14px 28px;
+  }
+  &--mini {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+  }
+  &--scroll {
+    padding: 20px;
+  }
+}

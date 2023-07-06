@@ -1,0 +1,70 @@
+@import '../../scss/colors.scss';
+@import '../../scss/breakpoints.scss';
+
+.calcblock {
+  min-height: 673px;
+  background: url('../../assets/images/Line1.svg') top no-repeat,
+    url('../../assets/images/Line2.svg') center no-repeat;
+  &__bar {
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: map-get($breakpoints,'xxl')) {
+      flex-wrap: wrap;
+    }
+    @media screen and (max-width: map-get($breakpoints,'sm')) {
+      width: 100%;
+    }
+  }
+  &__item {
+    @media screen and (max-width: map-get($breakpoints,'lg')) {
+      margin-left: 10px;
+    }
+  }
+  &__mobile {
+    @media screen and (max-width: map-get($breakpoints,'xxl')) {
+      margin-left: 0;
+    }
+  }
+  &__plaseholder {
+    color: map-get($mainColors, 'mainGray');
+    display: flex;
+    justify-content: space-between;
+  }
+  &__range {
+    width: 426px;
+    cursor: pointer;
+    color: map-get($primaryColors, 'primaryGreen');
+  }
+  &__input {
+    width: 426px;
+    height: 72px;
+    background: map-get($mainColors, 'mainSnow');
+    border-radius: 8px;
+    border: 1px solid map-get($borderColors, 'borderGray');
+    &--btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__currency {
+    width: 426px;
+    height: 72px;
+    background: map-get($mainColors, 'mainSnow');
+    border-radius: 8px;
+    border: 1px solid map-get($borderColors, 'borderGray');
+  }
+  &__panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: map-get($breakpoints,'xxl')) {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.panel-text {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,9 @@
+@import '../../scss/colors.scss';
+
+.social-icons {
+  display: flex;
+  grid-column-gap: 87px;
+  &__item {
+    color: map-get($mainColors, 'mainBlack');
+  }
+}

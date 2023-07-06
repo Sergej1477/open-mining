@@ -1,0 +1,95 @@
+@import '../scss/colors.scss';
+
+$offsets: (
+  0: 0px,
+  4: 4px,
+  12: 12px,
+  16: 16px,
+  20: 20px,
+  24: 24px,
+  27: 27px,
+  29: 29px,
+  32: 32px,
+  34: 34px,
+  48: 48px,
+  52: 52px,
+  56: 56px,
+  69: 69px,
+  70: 70px,
+  72: 72px,
+  80: 80px,
+  88: 88px,
+  104: 104px,
+  112: 112px,
+  120: 120px,
+  131: 131px,
+  136: 136px,
+  140: 140px,
+  147: 147px,
+  160: 160px,
+  200: 200px,
+  240: 240px,
+  255: 255px,
+);
+
+@each $key, $value in $offsets {
+  .pt-#{$key} {
+    padding-top: $value;
+  }
+}
+@each $key, $value in $offsets {
+  .pb-#{$key} {
+    padding-bottom: $value;
+  }
+}
+@each $key, $value in $offsets {
+  .pl-#{$key} {
+    padding-left: $value;
+  }
+}
+@each $key, $value in $offsets {
+  .pr-#{$key} {
+    padding-right: $value;
+  }
+}
+
+@each $key, $value in $offsets {
+  .mt-#{$key} {
+    margin-top: $value;
+  }
+}
+@each $key, $value in $offsets {
+  .mb-#{$key} {
+    margin-bottom: $value;
+  }
+}
+@each $key, $value in $offsets {
+  .ml-#{$key} {
+    margin-left: $value;
+  }
+}
+@each $key, $value in $offsets {
+  .mr-#{$key} {
+    margin-right: $value;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-blue {
+  color: map-get($primaryColors, 'primaryBlue');
+}
+
+.text-white {
+  color: map-get($mainColors, 'mainWhite');
+}
+
+.text-otherBlue {
+  color: map-get($otherColors, 'otherBlue');
+}
+
+.text-orange {
+  color: map-get($primaryColors, 'primaryOrange');
+}

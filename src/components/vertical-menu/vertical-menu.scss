@@ -1,0 +1,13 @@
+@import '../typography/texts.scss';
+@import '../../scss/colors.scss';
+
+.vertical-menu {
+  &__item {
+    margin-bottom: 32px;
+  }
+  &__link {
+    @extend .text-main;
+    color: map-get($mainColors, 'mainBlack');
+    text-decoration: none;
+  }
+}

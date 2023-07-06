@@ -1,0 +1,71 @@
+@import '../../scss/colors.scss';
+@import '../../scss/breakpoints.scss';
+
+.infoblock {
+  background: url('../../assets/images/infoblock/vector2.png') no-repeat;
+  &__main {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    @media screen and (max-width: map-get($breakpoints,'xxl')) {
+      flex-direction: column;
+    }
+    &--left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media screen and (max-width: map-get($breakpoints,'md')) {
+        display: none;
+      }
+    }
+    &--right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.box-alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 688px;
+  height: 208px;
+  background-color: map-get($borderColors, 'borderGray');
+  border-radius: 12px;
+  border-top: 16px solid map-get($borderColors, 'borderRed');
+  &--green {
+    border-top: 16px solid map-get($primaryColors, 'primaryGreen');
+    @media screen and (max-width: map-get($breakpoints,'md')) {
+      width: 100%;
+
+      }
+  }
+}
+
+.box-text {
+  width: 640px;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  height: 112px;
+  border-radius: 4px 8px 8px 4px;
+  background-color: map-get($borderColors, 'borderGray');
+  border-left: 8px solid map-get($borderColors, 'borderRed');
+  &--transparent {
+    background: transparent;
+  }
+  &--green {
+    border-left: 8px solid map-get($primaryColors, 'primaryGreen');
+  }
+  &--height {
+    height: 176px;
+  }
+  @media screen and (max-width: map-get($breakpoints,'md')) {
+    width: 100%;
+
+    }
+}

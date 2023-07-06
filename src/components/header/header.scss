@@ -1,0 +1,41 @@
+@import '../../scss/colors.scss';
+@import '../../scss/breakpoints.scss';
+
+.header {
+  padding-top: 48px;
+  min-height: 752px;
+  background-image: url('../../assets/images/Line1.svg'), url('../../assets/images/Line2.svg');
+  background-repeat: no-repeat;
+  background-position: center, bottom;
+  &__top-panel {
+    max-width: 1768px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  &__user-links {
+    width: 736px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    @media screen and (max-width: map-get($breakpoints,'lg')) {
+      display: none;
+    }
+  }
+  &__btn-screen {
+    @media screen and (max-width: map-get($breakpoints,'lg')) {
+      display: none;
+    }
+  }
+  &__mobile-btn {
+    position: absolute;
+    height: 48px;
+    color: map-get($primaryColors, 'primaryGreen');
+    border: none;
+    right: 0;
+    @media screen and (min-width: map-get($breakpoints,'lg')) {
+      display: none;
+    }
+  }
+}
