@@ -6,9 +6,13 @@
   justify-content: space-around;
   gap: 80px;
   @media screen and (max-width: map-get($breakpoints,'xxl')) {
+    padding-top: 140px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  @media screen and (max-width: map-get($breakpoints,'sm')) {
+    padding-top: 0;
   }
 }
 
@@ -29,8 +33,10 @@
     transform: translateY(-50px);
     box-shadow: 10px 10px 10px map-get($borderColors, 'borderGray');
   }
-  // &--active {
-  //   transform: translateY(-50px);
-  //   box-shadow: 10px 10px 10px map-get($borderColors, 'borderGray');
-  // }
+}
+
+.pt-112 {
+  @media screen and (max-width: map-get($breakpoints,'lg')) {
+    padding-top: 0;
+  }
 }

@@ -34,10 +34,13 @@
     transition: 0.4s;
     &:hover {
       background-color: map-get($otherColors, 'otherYellow');
+      @media screen and (max-width: map-get($breakpoints,'md')) {
+        justify-content: center;
+      }
     }
     @media screen and (max-width: map-get($breakpoints,'md')) {
       width: 100%;
-      justify-content: center;
+      justify-content: space-between;
       font-size: 20px;
     }
   }

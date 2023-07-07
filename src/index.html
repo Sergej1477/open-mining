@@ -28,7 +28,7 @@
         <div class="header-promo">
           <h1 class="header-promo__slang h1">Снижение рисков связанных с майнингом по максимуму</h1>
           <p class="header-promo__slang2 text2">Честность майнинга заложена в архитектуре</p>
-          <button class="btn btn--small">Начать арабатывать</button>
+          <button class="btn btn--small">Начать зарабатывать</button>
           <button class="header__btn-screen btn btn--small btn--white ml-52">Узнать больше</button>
           <div class="header-promo__image">
             <img class="header-promo__image1" src="./assets/images/Ethereum.svg" alt="image" />
@@ -215,11 +215,22 @@
         <div class="container">
           <h2 class="h2 text-center pt-131">Расчитайте свой доход</h2>
           <div class="calcblock__bar mt-70">
-            <div class="calcblock__item">
+            <div class="calcblock__item ml-69">
               <p class="text-main">Мощность, Th/s</p>
               <div class="calcblock__power">
-                <input class="other-medium calcblock__input" type="number" max="1000" min="10"/><br />
-                <input class="calcblock__range mt-27" value="500" type="range" min="10" max="1000" />
+                <input
+                  class="other-medium calcblock__input"
+                  type="number"
+                  max="1000"
+                  min="10"
+                /><br />
+                <input
+                  class="calcblock__range mt-27"
+                  value="500"
+                  type="range"
+                  min="10"
+                  max="1000"
+                />
               </div>
               <div class="calcblock__plaseholder">
                 <p class="text-main text-main--gray">10 Th/s</p>
@@ -240,14 +251,16 @@
             <div class="calcblock__item ml-69">
               <p class="text-main">Вид валюты</p>
               <select name="currency" class="calcblock__currency">
-                <option value="btc" selected>BTC</option>
-                <option value="Ethirium" selected>Ethirium</option>
+                <option value="Bitcoin" selected>BTC</option>
+                <option value="Lithecoin" selected>LTC</option>
+                <option value="Ethereum" selected>ETH</option>
+                <option value="Ripple" selected>RPL</option>
               </select>
-              <button class="calcblock__input calcblock__input--btn">
+              <!-- <button class="calcblock__input calcblock__input--btn">
                 <img class="ml-24" src="./assets/images/Bitcoin32.png" alt="Bitcoin" />
                 <h4 class="h4">BTC</h4>
                 <img class="mr-20" src="./assets/images/promo/Rectangle70.png" alt="Rectangle" />
-              </button>
+              </button> -->
             </div>
           </div>
           <div class="calcblock__panel mt-72">
@@ -278,7 +291,7 @@
               </div>
               <p class="text-main">Выплата за период</p>
             </div>
-            <div class="text-main calcblock__mobile ml-240">
+            <div class="text-main calcblock__mobile-btn ml-240">
               <button class="btn btn--text">Заключить контракт</button>
             </div>
           </div>
@@ -557,46 +570,70 @@
     </section>
     <footer class="footer pt-255">
       <div class="container">
-        <div class="footer__top-panel">
-          <div class="logo">
-            <img src="./assets/images/Logo.svg" alt="logo" />
+        <div class="footer-desktop">
+          <div class="footer__top-panel">
+            <div class="logo">
+              <img src="./assets/images/Logo.svg" alt="logo" />
+            </div>
+            <div class="footer__user-links">
+              <a href="#" class="footer__user-links text2">О проекте</a>
+              <a href="#" class="footer__user-links text2">Тарифы</a>
+              <a href="#" class="footer__user-links text2">FAQ</a>
+              <a href="#" class="footer__user-links text2">Контакты</a>
+            </div>
+            <div class="social-icons">
+              <a href="#" class="social-icons__item"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="social-icons__item"><i class="fa-brands fa-instagram"></i></a>
+            </div>
           </div>
-          <div class="footer__user-links">
-            <a href="#" class="footer__user-links text2">О проекте</a>
-            <a href="#" class="footer__user-links text2">Тарифы</a>
-            <a href="#" class="footer__user-links text2">FAQ</a>
-            <a href="#" class="footer__user-links text2">Контакты</a>
+          <div class="footer__panel mt-32">
+            <ul class="vertical-menu">
+              <li class="vertical-menu__item">
+                <a href="#" class="vertical-menu__link">Вход</a>
+              </li>
+              <li class="vertical-menu__item">
+                <a href="#" class="vertical-menu__link">Регистрация</a>
+              </li>
+            </ul>
+            <ul class="vertical-menu">
+              <li class="vertical-menu__item">
+                <a href="#" class="vertical-menu__link">Предложение</a>
+              </li>
+              <li class="vertical-menu__item">
+                <a href="#" class="vertical-menu__link">Оферта</a>
+              </li>
+            </ul>
+            <ul class="vertical-menu">
+              <li class="vertical-menu__item">
+                <a href="#" class="vertical-menu__link">Тарифы</a>
+              </li>
+              <li class="vertical-menu__item">
+                <a href="#" class="vertical-menu__link">Оплата</a>
+              </li>
+            </ul>
+            <ul class="vertical-menu">
+              <li class="vertical-menu__item">
+                <a href="#" class="vertical-menu__link">8 800 920 00 00</a>
+              </li>
+              <li class="vertical-menu__item">
+                <a href="#" class="vertical-menu__link">honest@maning.ru</a>
+              </li>
+            </ul>
           </div>
-          <div class="social-icons">
-            <a href="#" class="social-icons__item"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="social-icons__item"><i class="fa-brands fa-instagram"></i></a>
+          <div class="footer__bottom">
+            <p class="text-center text-main">&#169; 2019 Honest Mining</p>
           </div>
         </div>
-        <div class="footer__panel mt-32">
-          <ul class="vertical-menu">
-            <li class="vertical-menu__item">
-              <a href="#" class="vertical-menu__link">Вход</a>
-            </li>
-            <li class="vertical-menu__item">
-              <a href="#" class="vertical-menu__link">Регистрация</a>
-            </li>
-          </ul>
-          <ul class="vertical-menu">
-            <li class="vertical-menu__item">
-              <a href="#" class="vertical-menu__link">Предложение</a>
-            </li>
-            <li class="vertical-menu__item">
-              <a href="#" class="vertical-menu__link">Оферта</a>
-            </li>
-          </ul>
-          <ul class="vertical-menu">
-            <li class="vertical-menu__item">
-              <a href="#" class="vertical-menu__link">Тарифы</a>
-            </li>
-            <li class="vertical-menu__item">
-              <a href="#" class="vertical-menu__link">Оплата</a>
-            </li>
-          </ul>
+        <div class="footer-mobile">
+          <div class="footer__top-panel">
+            <div class="logo">
+              <img src="./assets/images/Logo.svg" alt="logo" />
+            </div>
+            <div class="social-icons">
+              <a href="#" class="social-icons__item"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="social-icons__item"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
           <ul class="vertical-menu">
             <li class="vertical-menu__item">
               <a href="#" class="vertical-menu__link">8 800 920 00 00</a>
@@ -605,14 +642,14 @@
               <a href="#" class="vertical-menu__link">honest@maning.ru</a>
             </li>
           </ul>
-        </div>
-        <div class="footer__bottom">
-          <p class="text-center text-main">&#169; 2019 Honest Mining</p>
+          <div class="footer__bottom">
+            <p class="text-center text-main">&#169; 2019 Honest Mining</p>
+          </div>
         </div>
       </div>
     </footer>
     <aside class="drawer">
-      <button class="drawer__close"><i class="fa-solid fa-xmark"></i></button>
+      <button class="drawer__close mt-12 ml-12"><i class="fa-solid fa-xmark"></i></button>
       <div class="drawer__user-links">
         <a href="#" class="drawer__user-links text2">О проекте</a>
         <a href="#" class="drawer__user-links text2">Тарифы</a>

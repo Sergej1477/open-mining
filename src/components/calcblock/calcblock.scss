@@ -11,18 +11,23 @@
     @media screen and (max-width: map-get($breakpoints,'xxl')) {
       flex-wrap: wrap;
     }
-    @media screen and (max-width: map-get($breakpoints,'sm')) {
-      width: 100%;
-    }
   }
   &__item {
     @media screen and (max-width: map-get($breakpoints,'lg')) {
-      margin-left: 10px;
+      width: auto;
+    }
+    @media screen and (max-width: map-get($breakpoints,'sm')) {
+      margin-left: 0;
+      width: 100%;
     }
   }
-  &__mobile {
+  &__mobile-btn {
     @media screen and (max-width: map-get($breakpoints,'xxl')) {
-      margin-left: 0;
+      margin-left: 24px;
+      margin-top: 24px;
+    }
+    @media screen and (max-width: map-get($breakpoints,'md')) {
+      margin-left: 24px;
     }
   }
   &__plaseholder {

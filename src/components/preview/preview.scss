@@ -19,6 +19,10 @@
         width: 100%;
         height: 100%;
       }
+      @media screen and (max-width: map-get($breakpoints,'sm')) {
+        position: relative;
+        margin-top: 150px;
+      }
     }
   }
   &__text {
@@ -35,5 +39,11 @@
       text-align: center;
       width: 100%;
     }
+  }
+}
+
+.pt-120 {
+  @media screen and (max-width: map-get($breakpoints,'lg')) {
+  padding-top: 0;
   }
 }
