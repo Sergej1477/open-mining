@@ -39,6 +39,9 @@
     width: 426px;
     cursor: pointer;
     color: map-get($primaryColors, 'primaryGreen');
+    @media screen and (max-width: map-get($breakpoints,'sm')) {
+      width: 100%;
+    }
   }
   &__input {
     width: 426px;
@@ -51,6 +54,9 @@
       justify-content: space-between;
       align-items: center;
     }
+    @media screen and (max-width: map-get($breakpoints,'sm')) {
+      width: 100%;
+    }
   }
   &__currency {
     width: 426px;
@@ -58,6 +64,9 @@
     background: map-get($mainColors, 'mainSnow');
     border-radius: 8px;
     border: 1px solid map-get($borderColors, 'borderGray');
+    @media screen and (max-width: map-get($breakpoints,'sm')) {
+      width: 100%;
+    }
   }
   &__panel {
     display: flex;

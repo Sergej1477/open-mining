@@ -24,6 +24,11 @@
       align-items: center;
     }
   }
+  &__heading {
+    @media screen and (max-width: map-get($breakpoints,'md')) {
+      font-size: 36px;
+    }
+  }
 }
 
 .box-alert {
@@ -36,12 +41,14 @@
   background-color: map-get($borderColors, 'borderGray');
   border-radius: 12px;
   border-top: 16px solid map-get($borderColors, 'borderRed');
+  @media screen and (max-width: map-get($breakpoints,'sm')) {
+    gap: 0;
+  }
   &--green {
     border-top: 16px solid map-get($primaryColors, 'primaryGreen');
     @media screen and (max-width: map-get($breakpoints,'md')) {
       width: 100%;
-
-      }
+    }
   }
 }
 
@@ -66,6 +73,5 @@
   }
   @media screen and (max-width: map-get($breakpoints,'md')) {
     width: 100%;
-
-    }
+  }
 }

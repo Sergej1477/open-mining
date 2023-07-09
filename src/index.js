@@ -18,3 +18,4 @@ import './components/test-animate/test-animate';
 import './components/social-icons/social-icons';
 import './components/vertical-menu/vertical-menu';
 import './components/drawer/drawer';
+import './services/firebase.service';
